@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gideon's Kleding Webshop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #34495e;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .product-name {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 10px 0 5px;
+    }
+    .product-price {
+      color: #e74c3c;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #3498db;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>Gideon's Kleding Webshop</header>
+  <main>
+    <h2>Onze Collectie</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/220x280.png?text=Hoodie+Zwart" alt="Zwarte Hoodie" />
+        <div class="product-name">Zwarte Hoodie</div>
+        <div class="product-price">€25,-</div>
+        <button onclick="alert('Je hebt Zwarte Hoodie toegevoegd aan je winkelmandje!')">Koop</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/220x280.png?text=Rode+T-shirt" alt="Rode T-shirt" />
+        <div class="product-name">Rode T-shirt</div>
+        <div class="product-price">€15,-</div>
+        <button onclick="alert('Je hebt Rode T-shirt toegevoegd aan je winkelmandje!')">Koop</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/220x280.png?text=Blauwe+Jeans" alt="Blauwe Jeans" />
+        <div class="product-name">Blauwe Jeans</div>
+        <div class="product-price">€30,-</div>
+        <button onclick="alert('Je hebt Blauwe Jeans toegevoegd aan je winkelmandje!')">Koop</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/220x280.png?text=Witte+Sneakers" alt="Witte Sneakers" />
+        <div class="product-name">Witte Sneakers</div>
+        <div class="product-price">€40,-</div>
+        <button onclick="alert('Je hebt Witte Sneakers toegevoegd aan je winkelmandje!')">Koop</button>
+      </div>
+    </div>
+  </main>
+  <footer>© 2025 Gideon's Kleding Webshop</footer>
+</body>
+</html>
